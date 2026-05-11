@@ -7,7 +7,7 @@ aliases:
   - S. Holechek
   - SA Holechek
 links:
-  home-page: [https://susanholechek.com](https://search.asu.edu/profile/654883)
+  home-page: https://search.asu.edu/profile/654883
   orcid: 
 ---
 
