@@ -1,8 +1,8 @@
 ---
 name: Eleanor Renteria
 image: images/photo.jpg
-description: Lead Programmer
 role: programmer
+description: Lead Programmer
 links:
   email: eroads1@asu.edu
 ---
