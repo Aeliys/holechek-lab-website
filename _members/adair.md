@@ -1,15 +1,13 @@
 ---
-name: Adair
-image: images/team/some-image.jpg
+name: Adiar Conlin
+image: images/photo.jpg
 role: user-graduate
-description: Senior Programmer
-aliases:
+description: ATA
 links:
-  home-page: 
-  email: 
   ORCID: 
+  email: 
 ---
 
-A bio for Tim, written in Markdown.
-A descriptions of his academic studies, his recent accomplishments, his goals for the future, his likes/dislikes, etc.
+A bio, written in Markdown.
+A descriptions of academic studies, recent accomplishments, goals for the future, likes/dislikes, etc.
 One or two paragraphs is probably best.
