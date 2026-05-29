@@ -24,7 +24,7 @@ We also work within broader efforts to ensure that online students have equitabl
 
 {% capture text %}
 
-Our active projects span wet laboratory experiments, population-scale genomic and EHR analysis using All of Us data, and research training program development. Each project is structured to include undergraduate researchers at meaningful levels of contribution, including first-generation and online students entering research through SOLUR and iSTEM SOLUR Prep.
+xyz
 
 {%
   include button.html
@@ -47,7 +47,7 @@ Our active projects span wet laboratory experiments, population-scale genomic an
 
 {% capture text %}
 
-Our team brings together graduate students, undergraduates, and alumni/affiliates with backgrounds in cell biology, biostatistics, and computational biology science.
+Our active projects span wet laboratory experiments, population-scale genomic and EHR analysis using All of Us data, and research training program development. Each project is structured to include undergraduate researchers at meaningful levels of contribution, including first-generation and online students entering research through SOLUR and iSTEM SOLUR Prep.
 
 {%
   include button.html
