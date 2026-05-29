@@ -1,8 +1,6 @@
 ---
 ---
 
-# Holechek Laboratory
-
 # Welcome to the Holechek Laboratory
 
 We study the cellular and molecular mechanisms that shape human health across diverse populations. By integrating wet laboratory science with large-scale biobank data from the All of Us Research Program, our work moves between the bench and population health.
