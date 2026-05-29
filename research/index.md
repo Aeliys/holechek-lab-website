@@ -7,13 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-{% include section.html %}
-
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
-
 Our research sits at the intersection of cellular biology and population
 science. We believe the most durable insights come from studying mechanisms
 in controlled systems and then stress-testing those findings against the
