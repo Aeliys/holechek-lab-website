@@ -8,7 +8,8 @@ aliases:
   - SA Holechek
 links:
   home-page: https://search.asu.edu/profile/654883
-  orcid: 
+  orcid: 0000-0001-8713-9213
+  email: susan.holechek@asu.edu
 ---
 
 Dr. Susan Holechek is an Associate Teaching Professor at the [School of Life Sciences](https://sols.asu.edu/about/mission-vision) at Arizona State University with an affiliated appointment at the [Simon A. Levin Mathematical, Modeling and Sciences Center](https://mcmsc.asu.edu/). Following her undergraduate degree, she worked at the Molecular Biology Division of the Peruvian NIH studying dengue and was part of the response team for the first dengue outbreak with hemorrhagic cases in 2000. Her graduate research at Arizona State University involved the study of vaccinia virus pathogenesis, and her post-doctoral research was focused on the role of the immune system in the modulation and transmission of infectious diseases using both experimental and mathematical modeling approaches. Her current research is at the intersection of population genetics and chronic diseases.

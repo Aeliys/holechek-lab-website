@@ -1,13 +1,9 @@
 ---
 name: Jenn Hardy
 image: images/photo.jpg
-role: user-graduate
+role: ata
+group: immersion
 description: ATA
-links:
-  ORCID: 
-  email: 
 ---
 
-A bio, written in Markdown.
-A descriptions of academic studies, recent accomplishments, goals for the future, likes/dislikes, etc.
-One or two paragraphs is probably best.
+<!-- Add a short bio here: studies, current lab work, and future goals (one or two paragraphs). -->

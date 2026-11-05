@@ -18,6 +18,18 @@ undergrad:
   icon: fa-solid fa-user-graduate
   description: Undergraduate Student
 
+ata:
+  icon: fa-solid fa-chalkboard-user
+  description: ATA
+
+ambassador:
+  icon: fa-solid fa-people-group
+  description: All of Us Ambassador
+
+alum:
+  icon: fa-solid fa-user-clock
+  description: Lab Alum
+
 programmer:
   icon: fa-solid fa-code
   description: Programmer

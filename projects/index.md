@@ -2,15 +2,20 @@
 title: Projects
 nav:
   order: 2
-  tooltip: Software, datasets, and more
+  tooltip: Current studies and training programs
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our projects move between the bench and population health. Some begin with a
+question about how cells respond to stress; others start with patterns in
+large-scale health data from the
+[All of Us Research Program](https://allofus.nih.gov/). Each project is built
+to include undergraduate researchers at meaningful levels of contribution,
+including first-generation and online students entering research through
+SOLUR and iSTEM SOLUR Prep.
 
-{% include tags.html tags="publication, resource, website" %}
+{% include tags.html tags="all of us, wet lab, health equity, training" %}
 
 {% include search-info.html %}
 

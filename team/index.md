@@ -5,34 +5,55 @@ nav:
   tooltip: About our team
 ---
 
-## {% include icon.html icon="fa-solid fa-users" %}Team
+# {% include icon.html icon="fa-solid fa-users" %}Team
 
-The Holechek laboratory is built on the premise that good science requires
+The Holechek Laboratory is built on the premise that good science requires
 people with different training, perspectives, and questions working in the
 same room. Our team combines expertise in cell biology, biostatistics,
 computational analysis, and clinical science.
 
 We recruit actively and intentionally. First-generation college students,
 online students, transfer students, and researchers entering without
-traditional laboratory preparation are are central to our team and training philliosphopy. We continue this commitment through active participation in both the SOLUR and SOLUR PREP programs through the School of Life Sciences at Arizona State University.
+traditional laboratory preparation are central to our team and our training
+philosophy. We carry this commitment forward through active participation in
+the SOLUR and iSTEM SOLUR Prep programs in the School of Life Sciences at
+Arizona State University.
 
-# # {% include icon.html icon="fa-solid fa-users" %}
+{% comment %}
+  HOW TO PLACE SOMEONE ON THIS PAGE
+  Each person has a file in the _members folder. Two fields decide where
+  they appear:
+    role:  principal-investigator, phd, undergrad, ata, ambassador, alum
+           (controls the small icon on their photo; see _data/types.yaml)
+    group: graduate, undergraduate, ambassador, immersion, alumni
+           (controls which section below they are listed in)
+  A section is hidden automatically until at least one person is in it.
+{% endcomment %}
+
+{% assign people = site.members %}
+
+{% include section.html %}
 
 ## Principal Investigator
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
+{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
+
+{% assign group_members = people | data_filter: "group == 'graduate'" %}
+{% if group_members.size > 0 %}
 
 {% include section.html %}
 
 ## Graduate Students
 
+Our graduate students lead independent projects and mentor undergraduate
+researchers, often across both bench and computational work.
+
 {% include list.html data="members" component="portrait" filter="group == 'graduate'" %}
 
-{% include section.html %}
+{% endif %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+{% assign group_members = people | data_filter: "group == 'undergraduate'" %}
+{% if group_members.size > 0 %}
 
 {% include section.html %}
 
@@ -40,31 +61,87 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 Our undergraduate researchers include students at multiple stages, from those
 completing independent research projects to students in their first semester
-of structured lab experience through SOLUR PREP. All are full members of the
-lab community.
+of structured lab experience through iSTEM SOLUR Prep. All are full members of
+the lab community.
 
 {% include list.html data="members" component="portrait" filter="group == 'undergraduate'" %}
 
+{% endif %}
+
+{% assign group_members = people | data_filter: "group == 'ambassador'" %}
+{% if group_members.size > 0 %}
+
+{% include section.html %}
+
 ## All of Us Ambassadors
+
+Dr. Holechek serves as Lead Ambassador for the
+[All of Us Research Program](https://allofus.nih.gov/) at ASU. Our ambassadors
+share information about the program with students and community members and
+help connect researchers with this nationally diverse dataset.
+
+{% include list.html data="members" component="portrait" filter="group == 'ambassador'" %}
+
+{% endif %}
+
+{% assign group_members = people | data_filter: "group == 'immersion'" %}
+{% if group_members.size > 0 %}
+
+{% include section.html %}
 
 ## Lab Immersion Instructional Team
 
+Our immersion instructional team runs the hands-on research immersion weeks
+that give online undergraduate and master's students laboratory experience
+they would not otherwise get. Team members teach techniques, guide student
+teams through experiments, and create learning materials such as talks and
+videos.
+
 {% include list.html data="members" component="portrait" filter="group == 'immersion'" %}
+
+{% endif %}
+
+{% assign group_members = people | data_filter: "group == 'alumni'" %}
+{% if group_members.size > 0 %}
+
+{% include section.html %}
 
 ## Lab Alumni
 
 {% include list.html data="members" component="portrait" filter="group == 'alumni'" %}
 
-{% capture content %}
+{% endif %}
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
+{% include section.html %}
 
-## Group Photos
+## Join the Lab
 
-## Funding
+We welcome students from every entry point, including online students and
+students with no prior research experience. Most students join through the
+[SOLUR program](https://sols.asu.edu/research/solur) or iSTEM SOLUR Prep.
 
-{% endcapture %}
+{%
+  include button.html
+  link="contact"
+  text="Get in touch"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+%}
 
-{% include grid.html style="square" content=content %}
+{% comment %}
+  GROUP PHOTOS
+  When you have group photos, add them to the images folder and replace the
+  file names below, then delete the comment tags around this block.
+
+  {% include section.html %}
+
+  ## Group Photos
+
+  {% capture content %}
+  {% include figure.html image="images/group-photo-1.jpg" %}
+  {% include figure.html image="images/group-photo-2.jpg" %}
+  {% include figure.html image="images/group-photo-3.jpg" %}
+  {% endcapture %}
+
+  {% include grid.html style="square" content=content %}
+{% endcomment %}

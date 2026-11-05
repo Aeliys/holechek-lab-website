@@ -1,9 +1,7 @@
 # site properties and page defaults
 title: Holechek Laboratory
 subtitle: 
-description: Our training philosophy draws on the SOLUR and iSTEM SOLUR Prep models developed at Arizona State University under Dr. Susan Holechek, whose work expanding
-undergraduate research access for online and first-generation students has been recognized with ASU's Catalyst Award for inclusion and the Outstanding
-Faculty Mentor Award. We apply that same commitment to every researcher who joins this lab.
+description: The Holechek Laboratory at Arizona State University studies the cellular and molecular mechanisms that shape human health across diverse populations, and trains researchers from every entry point.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
