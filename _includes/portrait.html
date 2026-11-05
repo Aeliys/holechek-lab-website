@@ -47,5 +47,17 @@
         {{ member.affiliation }}
       </span>
     {% endif %}
+
+    {% comment %}
+      Online / in-person label, set by adding "online" or "in-person"
+      to a member's group list
+    {% endcomment %}
+    {% if member.group contains "online" and member.group contains "in-person" %}
+      <span class="portrait-format">Online and in-person</span>
+    {% elsif member.group contains "online" %}
+      <span class="portrait-format">Online</span>
+    {% elsif member.group contains "in-person" %}
+      <span class="portrait-format">In-person</span>
+    {% endif %}
   </a>
 </div>

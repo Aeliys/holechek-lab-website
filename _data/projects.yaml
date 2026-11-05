@@ -1,47 +1,51 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+# Each project becomes a card on the Projects page.
+# group: featured  -> shows in the "Featured" section
+# no group          -> shows in the "More" section
+# image: swap images/photo.jpg for a real project image when you have one
+# link: add a URL (poster, preprint, protocol page) when one is public
+
+- title: Adult Adverse Experience Index (AAEI)
+  subtitle: Measuring cumulative adversity from clinical documentation
   group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: A ten-domain composite instrument that scores cumulative adversity in adults across four clusters, material deprivation, relational adversity, structural adversity, and health access adversity. The index is built from EHR documentation (ICD-10-CM Z codes mapped to OMOP and SNOMED CT concepts) using the _All of Us_ Research Program, with _All of Us_ survey modules as the reference standard. Validation uses confirmatory factor analysis and item response theory, followed by testing against cardiovascular outcomes.
   tags:
-    - resource
+    - all of us
+    - health equity
+    - instrument
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: PMOS Multimorbidity and Social Determinants of Health
+  subtitle: Polyendocrine metabolic ovarian syndrome (formerly PCOS) in All of Us
   group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: Compares cardiometabolic and mental health multimorbidity in people with PMOS against matched controls, and examines whether income, insurance, and healthcare access help explain differences across racial and ethnic groups. Uses EHR and survey data from the _All of Us_ Research Program.
   tags:
-    - resource
+    - all of us
+    - health equity
+    - reproductive health
 
-- title: Cool Tutorial
-  subtitle: a subtitle
+- title: Gut Epithelial Barrier Research Immersion
+  subtitle: A one-week hands-on lab course for online students
+  group: featured
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: A Monday through Thursday immersion week where teams of online undergraduate and graduate students model intestinal injury in IEC-6 cells using lipopolysaccharide (LPS) and test whether sodium butyrate is protective. Every team runs every assay, including LDH cytotoxicity, MTT viability, Bradford protein quantification, a barrier permeability assay, and immunocytochemistry. Students present their findings to faculty and university leadership at the end of the week.
   tags:
-    - resource
-    - publication
+    - wet lab
+    - training
+    - research immersion
 
-- title: Cool Web App
-  subtitle: a subtitle
+- title: Comparing Cell Models of Necrotizing Enterocolitis
+  subtitle: In development
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: A planned study comparing how well different intestinal models capture the physiology of necrotizing enterocolitis (NEC), from 2D plates and spheroids to rat organoids and gut-on-chip systems, using imaging to compare changes across models.
   tags:
-    - software
+    - wet lab
+    - in development
 
-- title: Cool Web Server
-  subtitle: a subtitle
+- title: Expanding Research Access for Online Students
+  subtitle: Building a faculty and lab network
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: Undergraduate research remains one of the most gatekept high-impact practices for online students. Building on SOLUR and iSTEM SOLUR Prep, our team is identifying faculty and labs open to online researchers and preparing students for dry lab and computational projects.
   tags:
-    - software
+    - training
+    - online students

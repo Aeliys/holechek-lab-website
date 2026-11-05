@@ -1,10 +1,10 @@
 ---
 name: Eleanor Renteria
 image: images/photo.jpg
-role: user-graduate
+role: ata
+group: immersion
 description: ATA
 links:
-  ORCID: 
   email: eroads1@asu.edu
 ---
 

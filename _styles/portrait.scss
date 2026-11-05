@@ -71,9 +71,19 @@
   font-weight: var(--semi-bold);
 }
 
+.portrait-format {
+  margin-top: 5px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--light-gray);
+  color: var(--dark-gray);
+  font-size: 0.85rem;
+}
+
 .portrait[data-style="tiny"] {
   .portrait-description,
-  .portrait-affiliation {
+  .portrait-affiliation,
+  .portrait-format {
     display: none;
   }
 }
