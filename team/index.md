@@ -26,6 +26,8 @@ Arizona State University.
     role:  principal-investigator, phd, undergrad, ata, ambassador, alum
            (controls the small icon on their photo; see _data/types.yaml)
     group: graduate, undergraduate, ambassador, immersion, alumni
+           (one group: group: immersion
+            several:   group: [immersion, ambassador])
            (controls which section below they are listed in)
   A section is hidden automatically until at least one person is in it.
 {% endcomment %}
@@ -38,7 +40,7 @@ Arizona State University.
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
 
-{% assign group_members = people | data_filter: "group == 'graduate'" %}
+{% assign group_members = people | data_filter: "Array(group).include?('graduate')" %}
 {% if group_members.size > 0 %}
 
 {% include section.html %}
@@ -48,11 +50,11 @@ Arizona State University.
 Our graduate students lead independent projects and mentor undergraduate
 researchers, often across both bench and computational work.
 
-{% include list.html data="members" component="portrait" filter="group == 'graduate'" %}
+{% include list.html data="members" component="portrait" filter="Array(group).include?('graduate')" %}
 
 {% endif %}
 
-{% assign group_members = people | data_filter: "group == 'undergraduate'" %}
+{% assign group_members = people | data_filter: "Array(group).include?('undergraduate')" %}
 {% if group_members.size > 0 %}
 
 {% include section.html %}
@@ -64,11 +66,11 @@ completing independent research projects to students in their first semester
 of structured lab experience through iSTEM SOLUR Prep. All are full members of
 the lab community.
 
-{% include list.html data="members" component="portrait" filter="group == 'undergraduate'" %}
+{% include list.html data="members" component="portrait" filter="Array(group).include?('undergraduate')" %}
 
 {% endif %}
 
-{% assign group_members = people | data_filter: "group == 'ambassador'" %}
+{% assign group_members = people | data_filter: "Array(group).include?('ambassador')" %}
 {% if group_members.size > 0 %}
 
 {% include section.html %}
@@ -80,11 +82,11 @@ Dr. Holechek serves as Lead Ambassador for the
 share information about the program with students and community members and
 help connect researchers with this nationally diverse dataset.
 
-{% include list.html data="members" component="portrait" filter="group == 'ambassador'" %}
+{% include list.html data="members" component="portrait" filter="Array(group).include?('ambassador')" %}
 
 {% endif %}
 
-{% assign group_members = people | data_filter: "group == 'immersion'" %}
+{% assign group_members = people | data_filter: "Array(group).include?('immersion')" %}
 {% if group_members.size > 0 %}
 
 {% include section.html %}
@@ -97,18 +99,18 @@ they would not otherwise get. Team members teach techniques, guide student
 teams through experiments, and create learning materials such as talks and
 videos.
 
-{% include list.html data="members" component="portrait" filter="group == 'immersion'" %}
+{% include list.html data="members" component="portrait" filter="Array(group).include?('immersion')" %}
 
 {% endif %}
 
-{% assign group_members = people | data_filter: "group == 'alumni'" %}
+{% assign group_members = people | data_filter: "Array(group).include?('alumni')" %}
 {% if group_members.size > 0 %}
 
 {% include section.html %}
 
 ## Lab Alumni
 
-{% include list.html data="members" component="portrait" filter="group == 'alumni'" %}
+{% include list.html data="members" component="portrait" filter="Array(group).include?('alumni')" %}
 
 {% endif %}
 
