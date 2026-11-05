@@ -26,9 +26,11 @@ Arizona State University.
     role:  principal-investigator, phd, undergrad, ata, ambassador, alum
            (controls the small icon on their photo; see _data/types.yaml)
     group: graduate, undergraduate, ambassador, immersion, alumni
-           (one group: group: immersion
-            several:   group: [immersion, ambassador])
            (controls which section below they are listed in)
+           online, in-person
+           (adds a small label under their photo; no section of its own)
+           one group:  group: immersion
+           several:    group: [immersion, ambassador, online]
   A section is hidden automatically until at least one person is in it.
 {% endcomment %}
 
